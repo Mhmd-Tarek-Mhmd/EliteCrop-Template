@@ -4,6 +4,9 @@ html {
   --main-color: #ec1c23;
   --secondary-color: #08526d;
 }
+section {
+  padding: 70px 0;
+}
 .overlay {
   position: absolute;
   width: 100%;
@@ -109,4 +112,24 @@ header .carousel-text {
 header .carousel-text span {
   background-color: var(--main-color);
   padding: 0 10px;
+}
+
+/*--- Services Section ---*/
+.services i {
+  background-color: var(--main-color);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.services h4 {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+.services p {
+  color: #687074;
+  font-size: 16px;
 }
