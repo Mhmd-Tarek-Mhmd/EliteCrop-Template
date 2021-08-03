@@ -7,6 +7,11 @@ html {
 section {
   padding: 70px 0;
 }
+.section-title {
+  color: #00000c;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
 .overlay {
   position: absolute;
   width: 100%;
@@ -132,4 +137,25 @@ header .carousel-text span {
 .services p {
   color: #687074;
   font-size: 16px;
+}
+
+/*--- Overview Section ---*/
+.overview {
+  background-color: #f0f5f7;
+  font-size: 18px;
+}
+.overview p {
+  color: #687074;
+}
+.overview p:last-of-type {
+  letter-spacing: 3px;
+}
+.overview button {
+  color: #fdfdfd;
+  font-weight: bold;
+  background-color: var(--main-color);
+}
+.overview button:hover {
+  color: #fdfdfd;
+  background-color: var(--secondary-color);
 }
