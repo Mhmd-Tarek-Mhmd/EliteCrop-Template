@@ -148,9 +148,6 @@
           ></li>
         </ol>
       </header>
-
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
     </div>
 
     <main>
@@ -208,6 +205,135 @@
           <button class="btn btn-sm">View More</button>
         </div>
       </section>
+
+      <!-- Work Section -->
+      <section class="work text-center" id="work">
+        <div class="container">
+          <h2 class="section-title">Featured Work</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. lvoluptatem.
+          </p>
+
+          <div class="shuffle-controls mb-5">
+            <button class="text-uppercase btn mr-2 mb-3 active">All</button>
+            <button
+              class="text-uppercase btn mr-2 mb-3"
+              data-shuffle=".website"
+            >
+              Website
+            </button>
+            <button class="text-uppercase btn mr-2 mb-3" data-shuffle=".logo">
+              Logo And Branding
+            </button>
+            <button
+              class="text-uppercase btn mr-2 mb-3"
+              data-shuffle=".graphic"
+            >
+              Graphic Design
+            </button>
+            <button
+              class="text-uppercase btn mr-2 mb-3"
+              data-shuffle=".marketing"
+            >
+              Online Marketing
+            </button>
+            <button class="text-uppercase btn mb-3" data-shuffle=".video">
+              Video
+            </button>
+          </div>
+        </div>
+
+        <div class="shuffle-target d-flex flex-wrap">
+          <div class="website col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/0.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="logo col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/1.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="graphic col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/2.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="website col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/3.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="logo col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/4.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="marketing col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/5.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="video col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/6.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="marketing col-md-3 col-sm-6 p-0">
+            <img
+              src="img/portofolio/7.png"
+              alt="Portfolio"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // Helper Function
+      function opacityAnimation(target, opacityVal = 1, pointerVal = "all") {
+        $(target)
+          .animate({ opacity: opacityVal })
+          .css({ pointerEvents: pointerVal });
+      }
+
+      // Work section logic
+      $(".work .shuffle-controls button").on("click", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        opacityAnimation(".work .shuffle-target > div", 0.1, "none");
+
+        $(this).attr("data-shuffle")
+          ? opacityAnimation($(this).attr("data-shuffle"))
+          : opacityAnimation(".work .shuffle-target > div");
+      });
+    </script>
   </body>
 </html>
