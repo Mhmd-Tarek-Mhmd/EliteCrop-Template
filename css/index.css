@@ -1,0 +1,112 @@
+/*------- Global Style -------*/
+html {
+  font-family: "Lato", sans-serif;
+  --main-color: #ec1c23;
+  --secondary-color: #08526d;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/*------- Page Style -------*/
+
+/*--- Home Section ---*/
+
+/* [1] Upper Bar */
+/* Lato-Regular,AdobeInvisFont,MyriadPro-Regular */
+.home .upper-bar {
+  background-color: var(--secondary-color);
+  color: #929fa5;
+  font-size: 12px;
+  padding: 10px 0;
+  cursor: default;
+}
+.upper-bar i {
+  color: #fefefe;
+}
+.upper-bar .mail {
+  color: #fff;
+}
+.upper-bar .quote {
+  border: 1px solid var(--main-color);
+  padding: 5px 10px;
+}
+
+/* [2] Nav */
+.home nav {
+  font-size: 14px;
+  padding: 10px 0;
+}
+@media (max-width: 575px) {
+  .home nav .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.home nav.navbar-light .navbar-nav .nav-link {
+  color: var(--secondary-color);
+}
+.home nav.navbar-light .navbar-nav .nav-link:hover,
+.home nav.navbar-light .navbar-nav .active .nav-link {
+  color: var(--main-color);
+}
+
+/* [3] Header */
+.home header,
+.home header img {
+  position: relative;
+  min-height: 400px;
+  height: calc(100vh - (50px + 70px));
+}
+@media (max-width: 767px) {
+  .home header,
+  .home header img {
+    min-height: 500px;
+    height: calc(100vh - (68px + 70px));
+  }
+}
+header .carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fefefe;
+  background-color: transparent;
+  background-clip: initial;
+}
+header .carousel-indicators li.active {
+  background-color: #fefefe;
+}
+header .carousel-text {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #fefefe;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 80%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .carousel-text {
+    font-size: 60px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  header .carousel-text {
+    font-size: 50px;
+  }
+}
+@media (max-width: 576px) {
+  header .carousel-text {
+    font-size: 40px;
+  }
+}
+header .carousel-text span {
+  background-color: var(--main-color);
+  padding: 0 10px;
+}
