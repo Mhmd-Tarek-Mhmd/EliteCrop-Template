@@ -217,3 +217,56 @@ header .carousel-text span {
   color: var(--main-color);
   font-size: 16px;
 }
+
+/*--- Testimonial Section ---*/
+.testimonial {
+  background-image: url(../img/testimonial-bg.png);
+  background-size: cover;
+  min-height: 550px;
+}
+.testimonial .carousel-indicators li {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #fefefe;
+  background-color: transparent;
+  background-clip: initial;
+}
+.testimonial .carousel-indicators li.active {
+  background-color: #fefefe;
+}
+.testimonial .carousel-inner {
+  z-index: 1;
+  color: #fdfdfd;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonial .carousel-inner h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.testimonial .carousel-inner span {
+  font-size: 16px;
+}
+.testimonial .carousel-inner p {
+  font-size: 15px;
+  font-weight: bold;
+}
+.testimonial .carousel-control-next,
+.testimonial .carousel-control-prev {
+  width: 10%;
+  opacity: 1;
+}
+.testimonial .carousel-control-next-icon,
+.testimonial .carousel-control-prev-icon {
+  width: 25px;
+  height: 30px;
+  color: #fdfdfd;
+  background-color: #000;
+}
+.testimonial .carousel-control-next-icon:hover,
+.testimonial .carousel-control-prev-icon:hover {
+  background-color: var(--main-color);
+}
