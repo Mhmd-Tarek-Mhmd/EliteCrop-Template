@@ -343,3 +343,19 @@ header .carousel-text span {
   color: #fdfdfd;
   opacity: 0.9;
 }
+
+/* Achievement Section */
+.achievement {
+  padding: 40px 0;
+}
+.achievement i,
+.achievement span {
+  color: var(--secondary-color);
+}
+.achievement span {
+  font-size: 36px;
+}
+.achievement em {
+  color: var(--main-color);
+  font-size: 15px;
+}
