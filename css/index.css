@@ -325,3 +325,21 @@ header .carousel-text span {
   width: -moz-fit-content;
   width: fit-content;
 }
+
+/* Why Choose Section */
+.why-choose {
+  background-color: var(--secondary-color);
+}
+.why-choose h2,
+.why-choose p {
+  color: #f7f7f7;
+}
+.why-choose button {
+  background-color: var(--main-color);
+  color: #fdfdfd;
+  font-size: 18px;
+}
+.why-choose button:hover {
+  color: #fdfdfd;
+  opacity: 0.9;
+}
