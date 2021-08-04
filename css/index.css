@@ -359,3 +359,23 @@ header .carousel-text span {
   color: var(--main-color);
   font-size: 15px;
 }
+
+/* Cool Section */
+.cool-section {
+  background-color: var(--main-color);
+  padding: 40px 0;
+}
+.cool-section .p {
+  font-weight: 300;
+  font-size: 30px;
+  color: #fdfdfd;
+}
+.cool-section button {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fdfdfd;
+  border: 1px solid;
+}
+.cool-section button:hover {
+  color: #fdfdfd;
+}
