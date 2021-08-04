@@ -1,8 +1,10 @@
 /*------- Global Style -------*/
-html {
-  font-family: "Lato", sans-serif;
+:root {
   --main-color: #ec1c23;
   --secondary-color: #08526d;
+}
+body {
+  font-family: "Lato", sans-serif;
 }
 section {
   padding: 70px 0;
@@ -10,6 +12,7 @@ section {
 .section-title {
   color: #00000c;
   font-size: 42px;
+  font-weight: 900;
   margin-bottom: 50px;
 }
 .section-title + p {
@@ -100,7 +103,7 @@ header .carousel-text {
   z-index: 1;
   color: #fefefe;
   font-size: 70px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.5;
   width: 80%;
 }
@@ -137,7 +140,7 @@ header .carousel-text span {
 .services h4 {
   color: var(--secondary-color);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .services p {
   color: #687074;
@@ -157,7 +160,7 @@ header .carousel-text span {
 }
 .overview button {
   color: #fdfdfd;
-  font-weight: bold;
+  font-weight: 700;
   background-color: var(--main-color);
 }
 .overview button:hover {
@@ -170,7 +173,7 @@ header .carousel-text span {
   color: var(--secondary-color);
   border: 1px solid;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .work button:hover,
 .work button.active {
@@ -203,7 +206,7 @@ header .carousel-text span {
 .blog .card h5 {
   color: var(--secondary-color);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .blog .card small {
   font-size: 14px;
@@ -216,6 +219,7 @@ header .carousel-text span {
 .blog .card a {
   color: var(--main-color);
   font-size: 16px;
+  font-weight: 700;
 }
 
 /*--- Testimonial Section ---*/
@@ -245,14 +249,14 @@ header .carousel-text span {
 }
 .testimonial .carousel-inner h5 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .testimonial .carousel-inner span {
   font-size: 16px;
 }
 .testimonial .carousel-inner p {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .testimonial .carousel-control-next,
 .testimonial .carousel-control-prev {
@@ -297,7 +301,7 @@ header .carousel-text span {
 .pricing .card-title h5,
 .pricing .card-header {
   color: var(--secondary-color);
-  font-weight: bold;
+  font-weight: 700;
   cursor: default;
 }
 .pricing .card-title h5 {
@@ -321,7 +325,7 @@ header .carousel-text span {
 }
 .pricing .card button {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -338,6 +342,7 @@ header .carousel-text span {
   background-color: var(--main-color);
   color: #fdfdfd;
   font-size: 18px;
+  font-weight: 700;
 }
 .why-choose button:hover {
   color: #fdfdfd;
@@ -354,6 +359,7 @@ header .carousel-text span {
 }
 .achievement span {
   font-size: 36px;
+  font-weight: 900;
 }
 .achievement em {
   color: var(--main-color);
@@ -371,7 +377,7 @@ header .carousel-text span {
   color: #fdfdfd;
 }
 .cool-section button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   color: #fdfdfd;
   border: 1px solid;
