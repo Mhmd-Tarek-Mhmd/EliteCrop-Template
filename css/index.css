@@ -270,3 +270,58 @@ header .carousel-text span {
 .testimonial .carousel-control-prev-icon:hover {
   background-color: var(--main-color);
 }
+
+/* Pricing Section */
+.pricing,
+.pricing .card-header {
+  background-color: #f7f7f7;
+}
+.pricing .card {
+  background-color: #fdfdfd;
+  padding: 20px 0;
+}
+.pricing .col:nth-of-type(2) .card {
+  transform: translateY(-12px);
+}
+@media (max-width: 767px) {
+  .pricing .col:nth-of-type(2) .card {
+    transform: translateY(0);
+  }
+}
+.pricing .card li,
+.pricing .card-title span {
+  font-size: 16px;
+  color: #687074;
+}
+
+.pricing .card-title h5,
+.pricing .card-header {
+  color: var(--secondary-color);
+  font-weight: bold;
+  cursor: default;
+}
+.pricing .card-title h5 {
+  font-size: 24px;
+}
+.pricing .card-header {
+  font-size: 40px;
+  border: none;
+}
+.pricing .card-header sub {
+  font-size: 20px;
+}
+
+.pricing .col:nth-child(2) .card-header,
+.pricing .card button {
+  background-color: var(--main-color);
+  color: #fdfdfd;
+}
+.pricing .card button:hover {
+  background-color: var(--secondary-color);
+}
+.pricing .card button {
+  font-size: 18px;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
+}
