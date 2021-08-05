@@ -432,3 +432,11 @@ header .carousel-text span {
 .contact .row:last-of-type p a {
   color: var(--secondary-color);
 }
+
+/* Footer area */
+footer {
+  color: #687074;
+  font-size: 14px;
+  padding: 20px 0;
+  border-top: 1px solid #a1a1a1;
+}
