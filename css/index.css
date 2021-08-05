@@ -385,3 +385,50 @@ header .carousel-text span {
 .cool-section button:hover {
   color: #fdfdfd;
 }
+
+/* Contact Section */
+.contact {
+  background-origin: #f7f7f7;
+  padding: 50px 0;
+}
+.contact h6 {
+  color: var(--secondary-color);
+  font-size: 22px;
+}
+
+.contact .row:first-of-type p {
+  font-size: 18px;
+  color: #687074;
+}
+.contact .row:first-of-type i {
+  padding: 5px 7px;
+  color: #fdfdfd;
+  background-color: var(--secondary-color);
+}
+.contact .row:first-of-type a {
+  color: var(--secondary-color);
+}
+
+.contact .links {
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+.contact .links i {
+  color: #687074;
+}
+.contact .links ul {
+  list-style-type: "\f054";
+  font-family: "fontAwesome";
+  color: #687074;
+}
+.contact .links a {
+  margin-left: 5px;
+}
+
+.contact .row:last-of-type {
+  color: #687074;
+  font-size: 18px;
+}
+.contact .row:last-of-type p a {
+  color: var(--secondary-color);
+}
