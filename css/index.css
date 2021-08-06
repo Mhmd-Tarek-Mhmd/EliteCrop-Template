@@ -6,6 +6,9 @@
   --main-white: #fdfdfd;
   --secondary-white: #fefefe;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Lato", sans-serif;
 }
@@ -40,7 +43,7 @@ section {
   background-color: var(--secondary-color);
   color: #929fa5;
   font-size: 12px;
-  padding: 10px 0;
+  padding: 5px 0;
   cursor: default;
 }
 .home .upper-bar span:hover {
@@ -57,13 +60,6 @@ section {
 /* [2] Nav */
 .home nav {
   font-size: 14px;
-  padding: 10px 0;
-}
-@media (max-width: 575px) {
-  .home nav .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 .home nav.navbar-light .navbar-nav .nav-link {
   color: var(--secondary-color);
@@ -77,14 +73,14 @@ section {
 .home header,
 .home header img {
   position: relative;
-  min-height: 400px;
-  height: calc(100vh - (50px + 70px));
+  min-height: 300px;
+  height: calc(100vh - (40px + 66px));
 }
 @media (max-width: 767px) {
   .home header,
   .home header img {
-    min-height: 500px;
-    height: calc(100vh - (68px + 70px));
+    min-height: 250px;
+    height: calc(100vh - (58px + 66px));
   }
 }
 header .carousel-indicators li {
@@ -109,19 +105,25 @@ header .carousel-text {
   line-height: 1.5;
   width: 80%;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   header .carousel-text {
     font-size: 60px;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
   header .carousel-text {
     font-size: 50px;
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 767px) and (max-width: 576px) {
   header .carousel-text {
     font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  header .carousel-text {
+    font-size: 30px;
+    line-height: 1.3;
   }
 }
 header .carousel-text span {
@@ -398,14 +400,13 @@ header .carousel-text span {
 /* Contact Section */
 .contact {
   background-color: #f7f7f7;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .contact h6 {
   color: var(--secondary-color);
   font-size: 22px;
 }
-
-.contact .row:first-of-type p {
+.contact .row {
   font-size: 18px;
   color: var(--text-color);
 }
@@ -417,10 +418,14 @@ header .carousel-text span {
 .contact .row:first-of-type a {
   color: var(--secondary-color);
 }
+.contact .row:last-of-type p a {
+  color: var(--secondary-color);
+}
 
 .contact .links {
   color: var(--secondary-color);
   font-size: 16px;
+  line-height: 2;
 }
 .contact .links i {
   color: var(--text-color);
@@ -434,14 +439,6 @@ header .carousel-text span {
   margin-left: 5px;
 }
 
-.contact .row:last-of-type {
-  color: var(--text-color);
-  font-size: 18px;
-}
-.contact .row:last-of-type p a {
-  color: var(--secondary-color);
-}
-
 /* Footer area */
 footer {
   background-color: #f7f7f7;
@@ -449,4 +446,12 @@ footer {
   font-size: 14px;
   padding: 20px 0;
   border-top: 1px solid #a1a1a1;
+}
+footer a,
+footer a:hover {
+  color: unset;
+  cursor: default;
+}
+footer a:hover {
+  opacity: 0.9;
 }

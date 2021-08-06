@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,6 +17,7 @@
     />
   </head>
   <body>
+    <!-- Home Section -->
     <div class="home" id="home">
       <!-- [1] Upper Bar -->
       <div class="upper-bar text-uppercase">
@@ -105,7 +106,8 @@
         <div class="carousel-inner">
           <div class="overlay"></div>
           <h1 class="carousel-text">
-            We’re an Independent Design and <span>Development</span> Agency.
+            We’re an Independent<br />Design and <span>Development</span><br />
+            Agency.
           </h1>
           <div class="carousel-item active">
             <img
@@ -150,6 +152,7 @@
       </header>
     </div>
 
+    <!-- Main Area -->
     <main>
       <!-- Services Section -->
       <section class="services text-center" id="services">
@@ -250,65 +253,57 @@
           <div class="website col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/0.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
           <div class="logo col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/1.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
           <div class="graphic col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/2.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
           <div class="website col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/3.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
           <div class="logo col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/4.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
           <div class="marketing col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/5.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
           <div class="video col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/6.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
           <div class="marketing col-md-3 col-sm-6 p-0">
             <img
               src="img/portofolio/7.png"
+              class="w-100 h-100"
               alt="Portfolio"
-              width="100%"
-              height="100%"
             />
           </div>
         </div>
@@ -544,14 +539,12 @@
             <div class="col-md-6 p-0">
               <img
                 src="img/why-choose.png"
-                class="d-block"
-                width="100%"
-                height="100%"
+                class="d-block w-100 h-100"
                 alt="Flat image"
               />
             </div>
 
-            <div class="col-md-6 p-4 text-md-left text-sm-center">
+            <div class="col-md-6 p-4 text-md-left text-center">
               <h2 class="section-title mb-3">Why Choose Us</h2>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -606,8 +599,8 @@
       <div class="cool-section text-center">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-9 p">You think we're cool? let's work together</div>
-            <div class="col-3">
+            <div class="col-7 p">You think we're cool? let's work together</div>
+            <div class="col-5">
               <button class="btn btn-sm">Contact Us</button>
             </div>
           </div>
@@ -669,7 +662,7 @@
       </div>
     </main>
 
-    <!-- Footer area -->
+    <!-- Footer Area -->
     <footer>
       <div class="container">
         <div class="row align-items-center">
@@ -677,11 +670,11 @@
             Copyright 2017 EliteCrop | All rights reserved
           </div>
           <div class="col-4 d-flex justify-content-end">
-            <i class="fa fa-facebook mr-2" aria-hidden="true"></i>
-            <i class="fa fa-twitter mr-2" aria-hidden="true"></i>
-            <i class="fa fa-linkedin mr-2" aria-hidden="true"></i>
-            <i class="fa fa-instagram mr-2" aria-hidden="true"></i>
-            <i class="fa fa-pinterest" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-facebook mr-2" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter mr-2" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin mr-2" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram mr-2" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -698,7 +691,7 @@
 
       // Work section logic
       $(".work .shuffle-controls button").on("click", function () {
-        $(this).addClass("active").siblings().removeClass("active");
+        $(this).button("toogle").siblings().removeClass("active");
         opacityAnimation(".work .shuffle-target > div", 0.1, "none");
 
         $(this).attr("data-shuffle")
